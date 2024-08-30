@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
-      {/* Other components can go here */}
-      <main>
-        {/* Page content */}
-      </main>
+      <div className="main-content">
+        {/* Main content goes here */}
+      </div>
+      <Footer />
     </div>
-
-  )
+  );
 }
 
 export default App
