@@ -1,9 +1,9 @@
 import React from 'react';
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
-import './Home.css';
+import Footer from '../../components/footer/footer';
+import Header from '../../components/header/header';
+import './home.css';
 
-const Home = () => {
+const home = () => {
     return (
         <div className="home-container">
             <Header />
@@ -23,4 +23,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default home;

@@ -1,6 +1,5 @@
-// src/components/Footer.jsx
 import React from 'react';
-import './Footer.css';
+import './footer.css';
 
 const Footer = () => {
     return (
@@ -35,9 +34,8 @@ const Footer = () => {
                     <div className="footer-column">
                         <h3 className="footer-heading">Company</h3>
                         <a href="/about" className="footer-link">About Us</a>
-                        <a href="/careers" className="footer-link">Careers</a>
+                        <a href="/Our-Mentors" className="footer-link">Our Mentors</a>
                         <a href="/contact" className="footer-link">Contact</a>
-                        <a href="/blog" className="footer-link">Blog</a>
                     </div>
                     <div className="footer-column">
                         <h3 className="footer-heading">Support</h3>
