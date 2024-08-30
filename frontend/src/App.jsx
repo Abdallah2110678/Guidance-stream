@@ -1,15 +1,9 @@
-import { useState } from 'react';
 import './App.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="main-content">
-        {/* Main content goes here */}
-      </div>
-      <Footer />
+    <div>
+      <Home />
     </div>
   );
 }
