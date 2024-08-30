@@ -1,0 +1,79 @@
+/* src/components/Header.css */
+.header {
+    background-color: #004d40;
+    /* Dark teal color */
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #00796b;
+    /* Slightly lighter teal */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: #004d40;
+    /* Dark teal */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.logo-img {
+    width: 180px;
+}
