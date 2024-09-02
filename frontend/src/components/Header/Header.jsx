@@ -9,7 +9,7 @@ const navLinks = [
     },
     {
         display: "Our Mentors",
-        url: "/login",
+        url: "#",
     },
 
     {
@@ -23,7 +23,7 @@ const navLinks = [
     {
         display: "Login",
         url: "login",
-        className: "login__link", // Adding a custom class for the Login link
+        className: "login__link",
     },
 ];
 
