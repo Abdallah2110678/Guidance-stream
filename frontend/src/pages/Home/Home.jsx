@@ -22,6 +22,9 @@ const Home = () => {
                     <h2>Find a Mentor</h2>
                     <p>Book appointments with experts in various fields to guide you on the right path.</p>
                 </section>
+                <div className='third-section'>
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet illum ut deserunt autem quam unde harum est cumque totam quos placeat provident, fuga at, dolorem nostrum excepturi facilis, ad cum.</h2>
+                </div>
                 <div className="sections-container">
                     <section className="section">
                         <h2>Founders</h2>
