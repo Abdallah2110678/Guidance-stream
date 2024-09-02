@@ -1,27 +1,65 @@
-import React from 'react';
-import './header.css';
+import React, { useRef } from "react";
+import { Container } from "reactstrap";
+import "./Header.css";
+
+const navLinks = [
+    {
+        display: "Home",
+        url: "/",
+    },
+    {
+        display: "Our Mentors",
+        url: "/login",
+    },
+
+    {
+        display: "Contact Us",
+        url: "/contact-us",
+    },
+    {
+        display: "About Us",
+        url: "about-us",
+    },
+    {
+        display: "Login",
+        url: "login",
+        className: "login__link", // Adding a custom class for the Login link
+    },
+];
 
 const Header = () => {
+    const menuRef = useRef();
+
+    const menuToggle = () => menuRef.current.classList.toggle("active__menu");
+
     return (
         <header className="header">
-            <div className="container">
-                <div className="header-left">
-                    <a href="/" className="logo">
-                        <img
-                            src="https://cdn.mentorcruise.com/img/mc-logo.svg"
-                            alt="MentorCruise"
-                            className="logo-img"
-                        />
-                        <span className="site-name">Mentorship</span>
-                    </a>
+            <Container>
+                <div className="navigation d-flex align-items-center justify-content-between">
+                    <div className="logo">
+                        <h2 className=" d-flex align-items-center gap-1">
+                            <i className="ri-pantone-line"></i> TariQi
+                        </h2>
+                    </div>
+
+                    <div className="nav d-flex align-items-center gap-5">
+                        <div className="nav__menu" ref={menuRef} onClick={menuToggle}>
+                            <ul className="nav__list">
+                                {navLinks.map((item, index) => (
+                                    <li key={index} className="nav__item">
+                                        <a href={item.url} className={item.className}>{item.display}</a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="mobile__menu">
+                        <span>
+                            <i className="ri-menu-line" onClick={menuToggle}></i>
+                        </span>
+                    </div>
                 </div>
-                <nav className="nav-links">
-                    <a href="/about-us" className="nav-item">Our Mentors</a>
-                    <a href="/contact-us" className="nav-item">Contact Us</a>
-                    <a href="/about-us" className="nav-item">About us</a>
-                    <a href="/login" className="login-btn">Login</a>
-                </nav>
-            </div>
+            </Container>
         </header>
     );
 };
