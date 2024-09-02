@@ -15,7 +15,7 @@ const Home = () => {
                         <button className="cta-button">Get Started</button>
                     </div>
                     <div className="hero-image">
-                        <img className='image' src="./../../../public/images/homebg.jpg" alt="Mentorship" />
+                        <img className='image' src="/images/homebg.jpg" alt="Mentorship" />
                     </div>
                 </section>
                 <section className="info-section">
